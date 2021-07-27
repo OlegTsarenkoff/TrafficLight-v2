@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2444D26926B0499800F2DA90 /* TrafficCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2444D26826B0499800F2DA90 /* TrafficCircle.swift */; };
 		24523D2326B0466300351398 /* TrafficLight_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24523D2226B0466300351398 /* TrafficLight_v2App.swift */; };
 		24523D2526B0466300351398 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24523D2426B0466300351398 /* ContentView.swift */; };
 		24523D2726B0466600351398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24523D2626B0466600351398 /* Assets.xcassets */; };
 		24523D2A26B0466600351398 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24523D2926B0466600351398 /* Preview Assets.xcassets */; };
+		2467DEFB26B0600100433287 /* SignalColor+bckgrnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467DEFA26B0600100433287 /* SignalColor+bckgrnd.swift */; };
+		2467DEFD26B0874A00433287 /* BackgroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467DEFC26B0874A00433287 /* BackgroundApp.swift */; };
+		2467DF0326B08A9600433287 /* ChangeTrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467DF0226B08A9600433287 /* ChangeTrafficLight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2444D26826B0499800F2DA90 /* TrafficCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficCircle.swift; sourceTree = "<group>"; };
 		24523D1F26B0466300351398 /* TrafficLight-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrafficLight-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24523D2226B0466300351398 /* TrafficLight_v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight_v2App.swift; sourceTree = "<group>"; };
 		24523D2426B0466300351398 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24523D2626B0466600351398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24523D2926B0466600351398 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24523D2B26B0466600351398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2467DEFA26B0600100433287 /* SignalColor+bckgrnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignalColor+bckgrnd.swift"; sourceTree = "<group>"; };
+		2467DEFC26B0874A00433287 /* BackgroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundApp.swift; sourceTree = "<group>"; };
+		2467DF0226B08A9600433287 /* ChangeTrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTrafficLight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +60,12 @@
 		24523D2126B0466300351398 /* TrafficLight-v2 */ = {
 			isa = PBXGroup;
 			children = (
-				24523D2226B0466300351398 /* TrafficLight_v2App.swift */,
-				24523D2426B0466300351398 /* ContentView.swift */,
 				24523D2626B0466600351398 /* Assets.xcassets */,
+				24523D2426B0466300351398 /* ContentView.swift */,
+				2467DEFE26B0877D00433287 /* Files */,
 				24523D2B26B0466600351398 /* Info.plist */,
 				24523D2826B0466600351398 /* Preview Content */,
+				24523D2226B0466300351398 /* TrafficLight_v2App.swift */,
 			);
 			path = "TrafficLight-v2";
 			sourceTree = "<group>";
@@ -67,6 +76,17 @@
 				24523D2926B0466600351398 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2467DEFE26B0877D00433287 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				2444D26826B0499800F2DA90 /* TrafficCircle.swift */,
+				2467DF0226B08A9600433287 /* ChangeTrafficLight.swift */,
+				2467DEFC26B0874A00433287 /* BackgroundApp.swift */,
+				2467DEFA26B0600100433287 /* SignalColor+bckgrnd.swift */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +160,10 @@
 			files = (
 				24523D2526B0466300351398 /* ContentView.swift in Sources */,
 				24523D2326B0466300351398 /* TrafficLight_v2App.swift in Sources */,
+				2467DEFB26B0600100433287 /* SignalColor+bckgrnd.swift in Sources */,
+				2467DEFD26B0874A00433287 /* BackgroundApp.swift in Sources */,
+				2467DF0326B08A9600433287 /* ChangeTrafficLight.swift in Sources */,
+				2444D26926B0499800F2DA90 /* TrafficCircle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
