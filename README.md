@@ -1,2 +1,3 @@
 # TrafficLight-v2
-Swift UI
+Using SwiftUI
+Homework for Swiftbook.ru
