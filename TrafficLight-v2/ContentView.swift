@@ -50,7 +50,6 @@ extension ContentView {
                 }
                 Spacer()
                 ChangeTrafficLight(title: buttonTitle, icon: buttonIcon, action: {
-                    self.buttonIcon = Image(systemName: "")
                     self.nextColor()
                 })
             }.padding()
