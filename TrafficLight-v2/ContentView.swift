@@ -21,12 +21,15 @@ struct ContentView: View {
         case .red:
             currentLight = .yellow
             buttonTitle = "Steady!"
+            buttonIcon = Image(systemName: "figure.wave.circle")
         case .yellow:
             currentLight = .green
             buttonTitle = "Go!"
+            buttonIcon = Image(systemName: "figure.walk")
         case .green:
             currentLight = .red
             buttonTitle = "Ready!"
+            buttonIcon = Image(systemName: "figure.wave.circle.fill")
         }
     }
 }
