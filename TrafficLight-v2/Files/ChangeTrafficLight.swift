@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChangeTrafficLight: View {
     var title: String
+    var icon: Image
     var action: () -> Void
     
     var body: some View {
@@ -19,7 +20,10 @@ struct ChangeTrafficLight: View {
                     .frame(width: 300, height: 100)
                     .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
                     .shadow(color: Color.gray.opacity(0.7), radius: 10, x: -5, y: -5)
-                Label(title, systemImage: "chevron.right.circle.fill")
+                Label(
+                    title: { Text(title) },
+                    icon: { icon }
+)
                     .foregroundColor(.gray)
                     .font(.title)
             }
@@ -29,6 +33,6 @@ struct ChangeTrafficLight: View {
 
 struct ChangeTrafficLight_Previews: PreviewProvider {
     static var previews: some View {
-        ChangeTrafficLight(title: "Start!", action: {})
+        ChangeTrafficLight(title: "Start!", icon: Image(systemName: "paperplane.fill"), action: {})
     }
 }
