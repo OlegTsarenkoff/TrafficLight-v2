@@ -49,10 +49,10 @@ extension ContentView {
                     TrafficCircle(colorLight: .green, opacityLight: currentLight == .green ? 1 : 0.1)
                 }
                 Spacer()
-                ChangeTrafficLight(title: buttonTitle, icon: buttonIcon) {
+                ChangeTrafficLight(title: buttonTitle, icon: buttonIcon, action: {
                     self.buttonIcon = Image(systemName: "")
                     self.nextColor()
-                }
+                })
             }.padding()
         }
     }
