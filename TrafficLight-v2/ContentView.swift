@@ -12,14 +12,21 @@ enum CurrentLight {
 }
 
 struct ContentView: View {
-    @State private var buttonTitle = "Start"
+    @State private var buttonTitle = "Start!"
+    @State private var buttonIcon = Image(systemName: "arrowshape.turn.up.right.fill")
     @State private var currentLight = CurrentLight.yellow
     
     private func nextColor() {
         switch currentLight {
-        case .red: currentLight = .yellow
-        case .yellow: currentLight = .green
-        case .green: currentLight = .red
+        case .red:
+            currentLight = .yellow
+            buttonTitle = "Steady!"
+        case .yellow:
+            currentLight = .green
+            buttonTitle = "Go!"
+        case .green:
+            currentLight = .red
+            buttonTitle = "Ready!"
         }
     }
 }
@@ -42,8 +49,8 @@ extension ContentView {
                     TrafficCircle(colorLight: .green, opacityLight: currentLight == .green ? 1 : 0.1)
                 }
                 Spacer()
-                ChangeTrafficLight(title: buttonTitle) {
-                    self.buttonTitle = "Next"
+                ChangeTrafficLight(title: buttonTitle, icon: buttonIcon) {
+                    self.buttonIcon = Image(systemName: "")
                     self.nextColor()
                 }
             }.padding()
